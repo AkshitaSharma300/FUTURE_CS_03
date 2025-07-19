@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secure File Sharing</title>
+</head>
+<body>
+    <h2>Upload a File</h2>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <button type="submit">Upload & Encrypt</button>
+    </form>
+
+    <h2>Download a File</h2>
+    <form action="/download" method="post">
+        <input type="text" name="filename" placeholder="filename.enc">
+        <button type="submit">Download & Decrypt</button>
+    </form>
+</body>
+</html>
